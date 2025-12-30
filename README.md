@@ -16,7 +16,7 @@ from HorribleGeneAnalyzer import AnalyzeDNA, AnalyzeORFs
 '''
 
 # Load a file with python 
-with open('file.fasta', 'f') as f:
+with open('file.fasta', 'r') as f:
 
   # Passes a fasta file as parameter
   bases = AnalyzeDNA(f)
