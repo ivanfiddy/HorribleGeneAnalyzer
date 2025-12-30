@@ -7,30 +7,6 @@ from utils import _slicer, _nspace, _checkifbuilt
 
 class AnalyzeDNA:
 
-    '''
-        This class focuses on analysing the fundemental base sequence.
-        It stores the base in a 2 bit array for optimized memory and parsing
-
-        Builders methods
-        Prerequisits for accessing public variables below:
-        - basebuild() builds and stores fasta bases into a 2 bit array
-        - transbuild() builds and stores translated bases into amino acids into a 5 bit array
-        - reversebuild() builds and stores reverse template bases into a 2 bit array ( replaces storage of basebuild() )
-
-        Public variables:
-        - bases = index object that can be sliced to get bases / reverse complement bases quickly, e.g. bases[:] for all bases
-        - codons = index object that can be sliced to get codons, e.g. codons[:200] for first 200 codons
-        - trans = idnex object that can be sliecd to get amino acids, e.g. trans[::2] for every second amino acid
-
-        Public methods:
-        - baseratio(form=_) returns the ratio of bases. form is the fraction you want, that can be written in any way in
-            the format of 'at/gc' or even by mixing bases into 'ag/ct'. Default is 'at/gc'
-        - codonfreq() returns a pandas.Series() object with every codon and its frequency as found in the DNA sequence
-        - transfrequi() returns a pandas.Series() object with every amino acid and its frequency
-
-    '''
-
-
     ### Constructor
     def __init__(self, context=None) -> None:
 
