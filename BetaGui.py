@@ -525,19 +525,14 @@ class GUI():
     pass
 
 
-### Executables here please
+### Executables here 
 
 GUI()
 
 ### File information
-# Gene.txt is for Ecoli
-# Sequence.txt is Homo sapiens isolate HG06807 PAN027#2#ptg000002l_rc_rotated mitochondrial, whole genome shotgun sequence
-
-### Tasks:
-### - Make it more efficient: Blasta system AND maybe file writing instead of memory storage
-### - Continue road map with alignment and matrix socring
-### - Make a progress bar
-
+# chromosome 21.fasta is an example fasta file that can be analyed with this program
 
 print(f'Code took: {time.time() - start} seconds to finish')
+
+# Exit code 0 meaning successful program execution
 exit(0)
